@@ -9,8 +9,6 @@ from helper import *
 
 def run(boxes,options):
 	#set the renderer
-	print options
-	print boxes
 	if 'box' in options:
 		_renderer = BoxRenderer()
 	elif 'text' in options:
@@ -57,9 +55,8 @@ def run(boxes,options):
 	
 	initial_width = width
 	initial_height = height
-	#print max_length
+	
 	#main search loop
-	print (width,height,max_length)
 	while height >= max_length:
 		
 		#check to see if this rectangle is worth testing
